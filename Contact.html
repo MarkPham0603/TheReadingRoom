@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/Contactstyles.css">
+  <title>Contact us</title>
+</head>
+<body>
+  <header>
+    <div class="mobile-menu-icon">☰</div>
+    <nav class="headernav"> 
+      <a href="index.html"><img class="logo" src="assets/bookstorelogo(edit)_finished.png" alt="My Bookstore"></a>
+      <label class="StoreName">THE READING ROOM</label>
+      <ul>
+        <li><a class="navbarele" href="index.html">Home</a></li>
+        <li><a class="navbarele" href="Fiction(cata1).html">Fiction</a></li>
+        <li><a class="navbarele" href="NonFiction(cata2).html">Non-Fiction</a></li>
+        <li><a class="navbarele" href="#">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Contact Us</h1>
+  <main>
+    <form method="post" action="">
+      <label for="contact-purpose">Contact Purpose *</label>
+      <select id="contact-purpose" name="contact-purpose" required>
+        <option value="" selected disabled>Select a purpose</option>
+        <option value="sell-books">I want to sell books</option>
+        <option value="buy-books">I want to buy books</option>
+      </select>
+      
+      <label class="requiredinfo" for="name">Name *</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label class="requiredinfo" for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label class="requiredinfo" for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label>Contact Preference *</label>
+      <label for="contact-pref-email">By email</label>
+      <input type="checkbox" id="contact-pref-email" name="contact-pref-email" value="email" required>
+      <label for="contact-pref-phone">By phone</label>
+      <input type="checkbox" id="contact-pref-phone" name="contact-pref-phone" value="phone" required>
+
+      <label>Receive weekly newsletter *</label>
+      <label for="newsletter-yes">Yes</label>
+      <input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked required>
+      <label for="newsletter-no">No</label>
+      <input type="radio" id="newsletter-no" name="newsletter" value="no" required>
+
+      <label for="extra-notes">Extra Notes</label>
+      <textarea id="extra-notes" name="extra-notes"></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+  <footer>
+    <nav class="Connect">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Copyright</a></li>
+      </ul>
+    </nav>
+    <nav class="Contact">
+      <ul>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li class="social"><a href="#"><img src="assets/facebook.png" width="30" alt="facebook_icon"></a></li>
+        <li class="social"><a href="#"><img src="assets/youtube.png" width="30" alt="youtube_icon"></a></li>
+        <li class="social"><a href="#"><img src="assets/instagram.png" width="30" alt="instagram_icon"></a></li>
+      </ul>
+    </nav>
+    <iframe class="youtube-video" width="400" height="300" src="https://www.youtube.com/embed/SKVcQnyEIT8"
+          title="Bookstore video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+  </footer>
+</body>
+</html>
